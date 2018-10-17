@@ -1,0 +1,51 @@
+body {
+    margin: 3vh 3vw;
+}
+.wrapper {
+    display: flex;
+    border: 2px solid blue;
+    border-radius: 5px;
+    min-height: 250px;
+}
+.flex-col {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.flex-row {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.card {
+    border: 1px solid #acacac;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 25vh;
+    width: 85vw;
+    margin: 1em;
+}
+@media only screen and (min-width: 480px) {
+    h1::after {
+        content: "> 480px";
+}
+    .flex-row .card {
+        width: 44vw;
+    }
+}
+@media only screen and (min-width: 720px) {
+    h1::after {
+content: "> 720ox";
+}
+    .flex-row .card {
+        width: 22vw;
+    }
+}
+@media only screen and (min-width: 960px) {
+    h1::after{
+content: "> 960px";
+}
+    .flex-row .card {
+        width: 15vw;
+    }
+}
